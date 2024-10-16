@@ -4,18 +4,21 @@
       {
         "src": "server.js",
         "use": "@vercel/node"
-      },
-      {
-        "src": "ai/recommendation.py",
-        "use": "@vercel/python"
       }
     ],
     "routes": [
       {
-        "src": "/api/(.*)",
+        "src": "/api/auth/(.*)",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/api/property/(.*)",
+        "dest": "/server.js"
+      },
+      {
+        "src": "/(.*)",
         "dest": "/server.js"
       }
-      
     ]
   }
   
