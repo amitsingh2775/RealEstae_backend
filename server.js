@@ -10,7 +10,7 @@ dotenv.config();
 
 // Update CORS configuration
 const corsOptions = {
-    origin: 'http://localhost:5173',  // The frontend URL
+    origin: 'https://real-estate-lyart-rho.vercel.app/',  // The frontend URL
     credentials: true,  // Allow credentials (cookies)
 };
 
